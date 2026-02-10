@@ -1628,7 +1628,7 @@ a {
   overflow: hidden;
 }
 .cid-vaROa6KfLa {
-  background-image: url("../../../assets/images/mbr-1920x1280.jpg");
+  background-image: url("../../../assets/images/mbr-1920x1280.webp");
 }
 .cid-vaROa6KfLa .mbr-fallback-image.disabled {
   display: none;
@@ -1643,6 +1643,47 @@ a {
   top: 0;
 }
 .cid-sFF3CYc3p7 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #232323;
+  overflow: hidden;
+}
+.cid-vaS1rdALa0 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-vaS1rdALa0 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vaS1rdALa0 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vaS1rdALa0 ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+.cid-vaS1rdALa0 li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cid-vaS1rdALa0 ul li::before {
+  position: absolute;
+  left: -1.6rem;
+  content: "\2022";
+  color: #e85a4f;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 1.6rem;
+}
+.cid-vaRZYNhWdR {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #232323;
