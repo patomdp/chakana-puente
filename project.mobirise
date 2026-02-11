@@ -52,7 +52,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 8,
+    "uniqCompNum": 12,
     "versionPublish": "6.1.12"
   },
   "pages": {
@@ -1433,6 +1433,188 @@
           "_once": "footers",
           "_params": {},
           "_anchor": "footer7-4"
+        }
+      ]
+    },
+    "terminos.html": {
+      "settings": {
+        "title": "Términos y condiciones",
+        "order": "3",
+        "footer_custom": "<script src=\"scripts/cleaner.js\"></script>"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "ul": {
+              "list-style": "none",
+              "margin": "0",
+              "padding-left": "2.5rem"
+            },
+            "li": {
+              "position": "relative",
+              "margin-bottom": "1rem"
+            },
+            "ul li::before": {
+              "position": "absolute",
+              "left": "-1.6rem",
+              "content": "\"\\2022\"",
+              "color": "@primaryColor",
+              "font-weight": "bold",
+              "font-size": "2rem",
+              "width": "1.6rem"
+            }
+          },
+          "_name": "content14",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Content\" class=\"content14\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    <b>Términos y Condiciones</b>\n                </h3>\n                \n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article>\n                    \n                    <li><b>Aceptación de los Términos</b><br>\n                        Al acceder y utilizar el sitio web de Chakana Puente y sus redes sociales oficiales (@ChakanaPuente en Instagram, TikTok y YouTube), usted acepta estos Términos y Condiciones en su totalidad. Si no está de acuerdo con estos términos, debe abandonar el sitio y nuestras plataformas inmediatamente.\n                    </li>\n                    \n                    <li><b>Descripción de los Servicios</b><br>\n                        Chakana Puente ofrece información sobre terapias holísticas, contenido educativo espiritual, recursos de autoconocimiento, y servicios de consulta terapéutica relacionados con el crecimiento y desarrollo personal. Actualmente, nuestro sitio funciona como plataforma informativa sobre nuestras terapias y servicios disponibles.\n                    </li>\n                    \n                    <li><b>Uso del Sitio y Redes Sociales</b><br>\n                        Usted se compromete a utilizar el sitio web de Chakana Puente y nuestras redes sociales de manera ética, respetuosa y legal, cumpliendo con todas las leyes y regulaciones aplicables. Está estrictamente prohibido:<br>\n                        • Utilizar nuestras plataformas con fines fraudulentos, ilícitos o que contravengan los principios espirituales que promovemos<br>\n                        • Intentar interferir con el correcto funcionamiento del sitio o nuestras redes sociales<br>\n                        • Copiar, reproducir o distribuir cualquier contenido sin autorización previa por escrito<br>\n                        • Utilizar nuestro contenido con fines comerciales sin consentimiento expreso\n                    </li>\n                    \n                    <li><b>Contenido Educativo y Terapéutico</b><br>\n                        El contenido publicado en nuestro sitio web y redes sociales tiene propósitos informativos y educativos relacionados con terapias holísticas y crecimiento espiritual. Este contenido no sustituye el consejo médico profesional, diagnóstico o tratamiento. Siempre consulte con profesionales de la salud calificados para condiciones médicas específicas.\n                    </li>\n                    \n                    <li><b>Reserva de Sesiones y Consultas</b><br>\n                        Las reservas de sesiones terapéuticas y consultas se coordinan a través de nuestras redes sociales oficiales @ChakanaPuente. Al solicitar una sesión, usted acepta proporcionar información veraz y completa. Las políticas de cancelación, reprogramación y pagos se comunicarán directamente durante el proceso de reserva.\n                    </li>\n                    \n                    <li><b>Propiedad Intelectual</b><br>\n                        Todo el contenido de Chakana Puente, incluyendo textos, imágenes, videos, diseños, logotipos, material audiovisual, meditaciones guiadas y cualquier otro material multimedia publicado en nuestro sitio web y redes sociales, es propiedad exclusiva de Chakana Puente o sus creadores autorizados. Este contenido está protegido por las leyes de propiedad intelectual y derechos de autor. No está permitido reproducir, distribuir, modificar o explotar comercialmente este contenido sin autorización expresa por escrito.\n                    </li>\n                    \n                    <li><b>Confidencialidad Terapéutica</b><br>\n                        Chakana Puente se compromete a mantener la confidencialidad de toda información compartida durante las sesiones terapéuticas y consultas holísticas. Esta información será tratada con el más alto nivel de privacidad y respeto, siguiendo los principios éticos de las prácticas terapéuticas holísticas.\n                    </li>\n                    \n                    <li><b>Enlaces a Sitios de Terceros</b><br>\n                        Nuestro sitio y redes sociales pueden contener enlaces a plataformas externas, recursos espirituales de terceros o sitios colaboradores. Chakana Puente no se responsabiliza por el contenido, políticas de privacidad o prácticas de estos sitios externos. El acceso a estos enlaces es bajo su propia responsabilidad.\n                    </li>\n                    \n                    <li><b>Limitación de Responsabilidad</b><br>\n                        Chakana Puente y sus colaboradores no serán responsables de cualquier daño directo, indirecto, incidental o consecuente que pueda surgir del uso del sitio web, redes sociales, o de la aplicación de información obtenida a través de nuestras plataformas. Las terapias holísticas complementan pero no reemplazan tratamientos médicos convencionales cuando estos sean necesarios.\n                    </li>\n                    \n                    <li><b>Modificaciones a los Términos</b><br>\n                        Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento para reflejar cambios en nuestros servicios, prácticas o requerimientos legales. Las modificaciones serán efectivas a partir de su publicación en nuestro sitio web y serán comunicadas a través de nuestras redes sociales oficiales @ChakanaPuente.\n                    </li>\n                    \n                    <li><b>Contacto</b><br>\n                        Si tiene preguntas o inquietudes sobre estos Términos y Condiciones, puede contactarnos a través de:<br>\n                        • Instagram: @ChakanaPuente<br>\n                        • TikTok: @ChakanaPuente<br>\n                        • YouTube: @ChakanaPuente<br><br>\n                        <em>Última actualización: Febrero 2026</em>\n                    </li>\n                    \n                </ul>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "vaS3ykh7o2",
+          "_anchor": "content14-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2026 -<b> Chakana Puente </b>- Todos los Derechos Reservados.\n<br>design by <a href=\"https://malawebs.com\" class=\"text-success\" target=\"_blank\">malawebs</a></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "vaS3ykuWJT",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer7-9"
+        }
+      ]
+    },
+    "normas-de-la-comunidad.html": {
+      "settings": {
+        "title": "Normas de la Comunidad",
+        "order": "4",
+        "footer_custom": "<script src=\"scripts/cleaner.js\"></script>"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "ul": {
+              "list-style": "none",
+              "margin": "0",
+              "padding-left": "2.5rem"
+            },
+            "li": {
+              "position": "relative",
+              "margin-bottom": "1rem"
+            },
+            "ul li::before": {
+              "position": "absolute",
+              "left": "-1.6rem",
+              "content": "\"\\2022\"",
+              "color": "@primaryColor",
+              "font-weight": "bold",
+              "font-size": "2rem",
+              "width": "1.6rem"
+            }
+          },
+          "_name": "content14",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Content\" class=\"content14\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    <b>Normas de la Comunidad</b>\n                </h3>\n                \n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article>\n                    \n                    <li><b>Respeto Mutuo</b><br>\n                        Trata a todos los miembros de la comunidad Chakana Puente con amabilidad, empatía y respeto, independientemente de sus creencias espirituales, opiniones, nivel de experiencia o camino de sanación personal. Cada persona está en su propio proceso evolutivo y merece ser honrada en su recorrido.\n                    </li>\n                    \n                    <li><b>Tolerancia y Diversidad</b><br>\n                        Aprecia y celebra la diversidad de enfoques terapéuticos, prácticas espirituales y creencias dentro de nuestra comunidad holística. Evita juzgar, menospreciar o invalidar las experiencias y opiniones de los demás. El mundo espiritual es vasto y cada persona encuentra su verdad de manera única.\n                    </li>\n                    \n                    <li><b>Comunicación Consciente y Respetuosa</b><br>\n                        Expresa tus ideas, experiencias y opiniones de manera respetuosa, constructiva y amorosa. Practica la comunicación no violenta y evita el lenguaje ofensivo, agresivo, provocador o que pueda herir la sensibilidad de otros miembros. Recuerda que las palabras tienen poder y crean realidades.\n                    </li>\n                    \n                    <li><b>Confidencialidad y Espacio Sagrado</b><br>\n                        Todo lo compartido en nuestra comunidad debe mantenerse en privado y respetarse como información confidencial. Honra el espacio sagrado que creamos juntos respetando la confidencialidad de las experiencias personales, procesos de sanación y discusiones íntimas de los miembros, excepto que el miembro autorice explícitamente su difusión.\n                    </li>\n                    \n                    <li><b>Contenido Relevante y Alineado</b><br>\n                        Comparte contenido relacionado con terapias holísticas, crecimiento espiritual, sanación, autoconocimiento y temas afines al propósito de Chakana Puente. Evita publicar contenido no relacionado, promocional excesivo o SPAM que desvirtúe el propósito de nuestro espacio comunitario.\n                    </li>\n                    \n                    <li><b>Información Responsable y Verificada</b><br>\n                        Si compartes información, consejos terapéuticos o recomendaciones espirituales, asegúrate de que estén respaldados por fuentes confiables, tu experiencia personal o formación profesional. Evita difundir información no verificada que pueda confundir o perjudicar a otros miembros. La responsabilidad es fundamental en el camino espiritual.\n                    </li>\n                    \n                    <li><b>Escucha Activa y Presencia Consciente</b><br>\n                        Practica la escucha activa y consciente al participar en conversaciones y discusiones. Valora genuinamente las perspectivas y experiencias de los demás, fomenta el diálogo significativo y mantén una presencia auténtica en tus interacciones. El silencio también es una forma válida de participación.\n                    </li>\n                    \n                    <li><b>Promociones Comerciales</b><br>\n                        No utilices nuestra comunidad como plataforma para promocionar productos, servicios, eventos personales o negocios externos sin el consentimiento previo expreso de los administradores de Chakana Puente. Respetamos el espacio comunitario como un lugar de crecimiento, no de comercio indiscriminado.\n                    </li>\n                    \n                    <li><b>Resolución Consciente de Conflictos</b><br>\n                        Si surgen desacuerdos, malentendidos o conflictos, aborda la situación desde el amor, la comprensión y el respeto. Busca soluciones pacíficas mediante el diálogo consciente. Evita discusiones intensas, prolongadas o que generen energías densas en nuestro espacio sagrado. Recuerda que todos somos espejos unos de otros.\n                    </li>\n                    \n                    <li><b>Permanencia Voluntaria y Libre Albedrío</b><br>\n                        Los miembros pueden unirse o dejar la comunidad Chakana Puente según su voluntad y momento evolutivo. Respetamos profundamente el libre albedrío de cada persona. No se debe presionar a ningún miembro para que participe si no resuena con su proceso actual o si prefiere retirarse del espacio.\n                    </li>\n                    \n                    <li><b>Consecuencias por Incumplimiento</b><br>\n                        Promovemos un entorno de respeto mutuo, amor incondicional y crecimiento espiritual en nuestra comunidad. Si en algún momento los miembros no cumplen con estas pautas de convivencia consciente, podrían enfrentar acciones destinadas a mantener el ambiente armonioso y constructivo para todos. Estas medidas pueden incluir:<br>\n                        • Advertencia inicial amigable, recordando las pautas de la comunidad<br>\n                        • Conversación privada con los administradores para comprender la situación<br>\n                        • Suspensión temporal en casos de reiteración<br>\n                        • Expulsión de la comunidad en situaciones graves y repetidas que afecten el bienestar colectivo<br><br>\n                        Nuestro objetivo al tomar medidas es asegurarnos de que cada miembro tenga la oportunidad de participar y compartir en un entorno seguro, nutritivo y enriquecedor para el alma. Siempre preferimos resolver los desacuerdos de manera pacífica, amorosa y dialogando entre los involucrados antes de considerar medidas disciplinarias. Esperamos que cada miembro comprenda la importancia sagrada de respetar estas pautas para que todos podamos seguir creciendo juntos en nuestro viaje de expansión espiritual y sanación colectiva.\n                    </li>\n                    \n                    <li><b>Gratitud y Reciprocidad</b><br>\n                        Cultivamos una comunidad basada en la gratitud, la reciprocidad energética y el apoyo mutuo. Agradecemos tu compromiso con mantener este espacio como un refugio de luz, amor y transformación consciente.<br><br>\n                        <em>Última actualización: Febrero 2026</em>\n                    </li>\n                    \n                </ul>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "vaS44OJVgP",
+          "_anchor": "content14-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2026 -<b> Chakana Puente </b>- Todos los Derechos Reservados.\n<br>design by <a href=\"https://malawebs.com\" class=\"text-success\" target=\"_blank\">malawebs</a></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "vaS44OVK3j",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer7-b"
         }
       ]
     }
