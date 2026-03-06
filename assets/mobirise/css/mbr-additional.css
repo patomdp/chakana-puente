@@ -2958,6 +2958,9 @@ a {
     left: -1rem;
   }
 }
+.cid-vceFhKSsky {
+  background-image: url("../../../assets/images/mbr-1507x1920.webp");
+}
 .cid-vceFhKSsky .mbr-fallback-image.disabled {
   display: none;
 }
@@ -2969,7 +2972,6 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
-  background-image: url("../../../assets/images/mbr-1-1920x1280.webp");
 }
 .cid-sFF75ZhH2d {
   padding-top: 6rem;
