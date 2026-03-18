@@ -2410,7 +2410,7 @@
         "header_custom": "",
         "footer_custom": "<script src=\"scripts/cleaner.js\"></script>",
         "html_before": "",
-        "meta_image": "@PROJECT_PATH@/assets/images/mbr-1256x837.jpg"
+        "meta_image": "@PROJECT_PATH@/assets/images/banner%2520web-1920x1080.png"
       },
       "components": [
         {
